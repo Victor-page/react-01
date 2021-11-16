@@ -1,5 +1,6 @@
 import Profile from './components/SocialProfile/Profile';
 import Statistics from './components/Statistics/Statistics';
+import FriendList from './components/FriendList/FriendList';
 
 import {
   username,
@@ -8,8 +9,8 @@ import {
   avatar,
   stats,
 } from './components/SocialProfile/user.json';
-
 import statisticsData from './components/Statistics/statisticsData.json';
+import friends from './components/FriendList/friends.json';
 
 const App = () => {
   return (
@@ -21,9 +22,9 @@ const App = () => {
         avatar={avatar}
         stats={stats}
       />
-
       <Statistics title="Upload stats" stats={statisticsData} />
       <Statistics stats={statisticsData} />
+      <FriendList friends={friends} />,
     </>
   );
 };
