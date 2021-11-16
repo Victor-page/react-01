@@ -1,6 +1,6 @@
 import Profile from './components/SocialProfile/Profile';
 import Statistics from './components/Statistics/Statistics';
-import FriendList from './components/FriendList/FriendList';
+// import FriendList from './components/FriendList/FriendList';
 
 import {
   username,
