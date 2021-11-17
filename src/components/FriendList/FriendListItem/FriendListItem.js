@@ -1,17 +1,18 @@
 import PropTypes from 'prop-types';
 
 import defaultAvatar from 'defaults/default-avatar.png';
+import classes from './FriendListItem.module.css';
 
 const FriendListItem = ({
   friend: { avatar = defaultAvatar, name, isOnline },
 }) => {
-  const spanClass = isOnline ? 'online' : 'offline';
+  const status = isOnline ? 'online' : 'offline';
 
   return (
-    <li className="item">
-      <span className={spanClass}></span>
-      <img className="avatar" src={avatar} alt={name} width="48" />
-      <p className="name">{name}</p>
+    <li className={classes.item}>
+      <span className={classes[status]}></span>
+      <img className={classes.avatar} src={avatar} alt={name} width="48" />
+      <p className={classes.name}>{name}</p>
     </li>
   );
 };

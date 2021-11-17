@@ -17,22 +17,22 @@ const Profile = ({
         <p className={classes.name}>{username}</p>
         <p className={classes.tag}>@{tag}</p>
         <p className={classes.location}>{location}</p>
-      </div>
 
-      <ul className={classes.stats}>
-        <li className={classes.statItem}>
-          <span className={classes.label}>Followers</span>
-          <span className={classes.quantity}>{followers}</span>
-        </li>
-        <li className={classes.statItem}>
-          <span className={classes.label}>Views</span>
-          <span className={classes.quantity}>{views}</span>
-        </li>
-        <li className={classes.statItem}>
-          <span className={classes.label}>Likes</span>
-          <span className={classes.quantity}>{likes}</span>
-        </li>
-      </ul>
+        <ul className={classes.stats}>
+          <li className={classes.statItem}>
+            <span className={classes.label}>Followers</span>
+            <span className={classes.quantity}>{followers}</span>
+          </li>
+          <li className={classes.statItem}>
+            <span className={classes.label}>Views</span>
+            <span className={classes.quantity}>{views}</span>
+          </li>
+          <li className={classes.statItem}>
+            <span className={classes.label}>Likes</span>
+            <span className={classes.quantity}>{likes}</span>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

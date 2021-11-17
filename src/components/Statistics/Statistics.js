@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
 
 import FileStatistics from './FileStatistics/FileStatistics';
+import classes from './Statistics.module.css';
 
 const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
+    <section className={classes.statistics}>
+      {title && <h2 className={classes.title}>{title}</h2>}
 
-      <ul className="stat-list">
+      <ul className={classes.statList}>
         {stats.map(({ id, label, percentage }) => (
           <FileStatistics key={id} label={label} percentage={percentage} />
         ))}

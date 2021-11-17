@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
 
+import classes from './FileStatistics.module.css';
+
 const FileStatistics = ({ label, percentage }) => {
   return (
-    <li className="item">
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}%</span>
+    <li className={classes.item}>
+      <span className={classes.label}>{label}</span>
+      <span className={classes.percentage}>{percentage}%</span>
     </li>
   );
 };
