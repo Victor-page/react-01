@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import FileStatistics from './FileStatistics';
+import FileStatistics from './FileStatistics/FileStatistics';
 
 const Statistics = ({ title, stats }) => {
   return (

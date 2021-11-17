@@ -1,7 +1,7 @@
-import Profile from './components/SocialProfile/Profile';
-import Statistics from './components/Statistics/Statistics';
-import FriendList from './components/FriendList/FriendList';
-import TransactionHistory from 'components/TransactionHistory/TransactionHistory';
+import Profile from 'components/Profile';
+import Statistics from 'components/Statistics';
+import FriendList from 'components/FriendList';
+import TransactionHistory from 'components/TransactionHistory';
 
 import {
   username,
@@ -9,10 +9,10 @@ import {
   location,
   avatar,
   stats,
-} from './components/SocialProfile/user.json';
-import statisticsData from './components/Statistics/statisticsData.json';
-import friends from './components/FriendList/friends.json';
-import transactions from './components/TransactionHistory/transactions.json';
+} from 'components/Profile/user.json';
+import statisticsData from 'components/Statistics/statisticsData.json';
+import friends from 'components/FriendList/friends.json';
+import transactions from 'components/TransactionHistory/transactions.json';
 
 const App = () => {
   return (
