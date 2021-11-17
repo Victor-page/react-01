@@ -11,26 +11,26 @@ const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+    <div className={classes.profile}>
+      <div className={classes.description}>
+        <img src={avatar} alt="User avatar" className={classes.avatar} />
+        <p className={classes.name}>{username}</p>
+        <p className={classes.tag}>@{tag}</p>
+        <p className={classes.location}>{location}</p>
       </div>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
+      <ul className={classes.stats}>
+        <li className={classes.statItem}>
+          <span className={classes.label}>Followers</span>
+          <span className={classes.quantity}>{followers}</span>
         </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
+        <li className={classes.statItem}>
+          <span className={classes.label}>Views</span>
+          <span className={classes.quantity}>{views}</span>
         </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
+        <li className={classes.statItem}>
+          <span className={classes.label}>Likes</span>
+          <span className={classes.quantity}>{likes}</span>
         </li>
       </ul>
     </div>

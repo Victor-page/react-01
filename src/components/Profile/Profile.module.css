@@ -1,16 +1,29 @@
 .profile {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
+}
+
+.profile:hover {
+}
+
+.avatar {
 }
 
 .name {
-  color: #ccc;
-  font-size: 18px;
 }
 
 .tag {
-  font-size: 22px;
-  color: black;
+}
+
+.location {
+}
+
+.stats {
+}
+
+.statItem {
+}
+
+.label {
+}
+
+.quantity {
 }
