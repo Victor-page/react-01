@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+import classes from './Profile.module.css';
 import defaultAvatar from 'defaults/default-avatar.png';
 
 const Profile = ({
